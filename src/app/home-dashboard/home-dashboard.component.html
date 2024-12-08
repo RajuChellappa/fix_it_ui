@@ -1,0 +1,18 @@
+<div class="dashboard">
+    <header>
+      <h1>Welcome to FixItAR</h1>
+      <p>Ready to fix something today?</p>
+      <div class="quick-actions">
+        <button mat-button (click)="navigateTo('diagnostic')">Diagnose an Issue</button>
+        <button mat-button (click)="navigateTo('kit-order')">Order Fix-It Kit</button>
+        <button mat-button (click)="navigateTo('virtual-support')">Virtual Technician</button>
+      </div>
+    </header>
+    <section class="recommendations">
+      <h2>Maintenance Recommendations</h2>
+      <div *ngFor="let task of maintenanceTasks" class="task-card">
+        <p>{{ task.name }}</p>
+        <button mat-raised-button color="primary">Fix Now</button>
+      </div>
+    </section>
+  </div>

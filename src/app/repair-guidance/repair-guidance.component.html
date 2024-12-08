@@ -1,0 +1,9 @@
+<div class="repair-guidance">
+    <h2>Repair Guidance</h2>
+    <div *ngFor="let step of repairSteps" class="step">
+      <h3>Step {{ step.id }}</h3>
+      <p>{{ step.description }}</p>
+      <img [src]="step.image" alt="Step Image">
+    </div>
+    <button mat-raised-button color="primary" (click)="completeRepair()">Mark Complete</button>
+  </div>

@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.dashboard {
+    header {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+      }
+      .quick-actions button {
+        margin: 0.5rem;
+      }
+    }
+  }
+  
+  .scanner, .fixit-kit, .repair-guidance, .virtual-support {
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 600px;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

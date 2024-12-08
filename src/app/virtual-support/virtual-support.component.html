@@ -1,0 +1,13 @@
+<div class="virtual-support">
+    <h2>Connect with a Technician</h2>
+    <p>Explain your issue below:</p>
+    <div [(ngModel)]="userIssue" placeholder="Describe your problem..."></div>
+    <button mat-raised-button color="primary" (click)="connectTechnician()">Connect</button>
+    <div *ngIf="technicianConnected">
+      <p>Connected with Technician: {{ technicianName }}</p>
+      <!-- Placeholder for Video Call UI -->
+      <div class="video-call">
+        <p>Video call interface here</p>
+      </div>
+    </div>
+  </div>

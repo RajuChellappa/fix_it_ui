@@ -1,0 +1,14 @@
+<div class="scanner">
+    <h2>Diagnose an Issue</h2>
+    <p>Use your camera to scan the area of the problem.</p>
+    <div class="camera-feed">
+      <!-- Placeholder for Camera Feed -->
+      <img src="assets/mock-camera-feed.jpg" alt="Camera Feed">
+    </div>
+    <button mat-raised-button color="primary" (click)="diagnose()">Diagnose</button>
+    <div *ngIf="diagnosis">
+      <h3>Diagnosis Result</h3>
+      <p>{{ diagnosis.result }}</p>
+      <button mat-raised-button color="accent" (click)="getGuidance()">Get Fix Instructions</button>
+    </div>
+  </div>
